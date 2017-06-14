@@ -52,7 +52,7 @@ describe("Tic-tac-toe", function(){
     game.play("x", 2, 0);
     game.play("o", 0, 1);
     game.play("x", 0, 2);
-    expect(game.over()).toEqual("Player 1 wins!");
+    expect(game.isOver()).toEqual("Player 1 wins!");
   });
 
 });
