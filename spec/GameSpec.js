@@ -32,4 +32,13 @@ describe("Game", function(){
     expect(game._currentplayer).toBe('player2');
   });
 
+  it("game can be won via a row", function() {
+    game.play("x", 0, 0);
+    game.play("o", 0, 1);
+    game.play("x", 1, 0);
+    game.play("o", 0, 2);
+    game.play("x", 2, 0);
+    expect(game.over()).toEqual("Player 1 wins!");
+  });
+
 });

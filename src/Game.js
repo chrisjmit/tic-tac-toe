@@ -25,9 +25,19 @@ Game.prototype.isTaken = function(x, y) {
 };
 
 Game.prototype.endTurn = function() {
+  this.isOver();
   this.turns += 1;
   this.nextPlayer();
 };
+
+Game.prototype.isOver = function() {
+  this.board.forEach(function(item){
+    if (item[2] === 0) {
+
+    }
+  });
+};
+
 
 Game.prototype.nextPlayer = function() {
   if (this.turns % 2 === 0) {

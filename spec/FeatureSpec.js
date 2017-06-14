@@ -46,4 +46,13 @@ describe("Tic-tac-toe", function(){
     expect(game.currentPlayer()).toBe('player2');
   });
 
+  it("a player wins if they claim all the fields in a row, column or diagonal", function() {
+    game.play("x", 1, 1);
+    game.play("o", 0, 0);
+    game.play("x", 2, 0);
+    game.play("o", 0, 1);
+    game.play("x", 0, 2);
+    expect(game.over()).toEqual("Player 1 wins!");
+  });
+
 });
