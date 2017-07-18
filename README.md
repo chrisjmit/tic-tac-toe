@@ -1,4 +1,6 @@
-#Tic-tac-toe
+# Tic-tac-toe
+
+One day tech-test challenge attempt at the tic-tac-tac kata.
 
 ## The brief
 
@@ -13,3 +15,8 @@
 *A game is over when all fields are taken*
 
 Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line.
+
+## To do
+
+- Add winning logic for diagonal and column
+- Refactoring functions in view of the single responsibility principle
